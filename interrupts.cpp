@@ -71,6 +71,8 @@ int main(int argc, char** argv) {
                 current_time += total_time_left;
 
             }
+            execution += std::to_string(current_time) + ", " + "1"+ ", IRET\n";
+            current_time += 1;
 
             
         /************************************************************************/
