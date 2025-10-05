@@ -1,0 +1,61 @@
+0, 45, CPU Burst
+45, 1, switch to kernel mode
+46, 20, context saved
+66, 1, find vector 15 in memory position 0x001E
+67, 1, load address 0X0584 into the PC
+68, 68, SYSCALL: run the ISR (device driver)
+136, 0, transfer data from device to memory
+136, 0, check for errors
+136, 20, CPU Burst
+156, 1, switch to kernel mode
+157, 20, context saved
+177, 1, find vector 15 in memory position 0x001E
+178, 1, load address 0X0584 into the PC
+179, 68, ENDIO: run the ISR (device driver)
+247, 0, check device status
+247, 50, CPU Burst
+297, 1, switch to kernel mode
+298, 20, context saved
+318, 1, find vector 8 in memory position 0x0010
+319, 1, load address 0X06EF into the PC
+320, 200, SYSCALL: run the ISR (device driver)
+520, 200, transfer data from device to memory
+720, 600, check for errors
+1320, 30, CPU Burst
+1350, 1, switch to kernel mode
+1351, 20, context saved
+1371, 1, find vector 8 in memory position 0x0010
+1372, 1, load address 0X06EF into the PC
+1373, 200, ENDIO: run the ISR (device driver)
+1573, 800, check device status
+2373, 55, CPU Burst
+2428, 1, switch to kernel mode
+2429, 20, context saved
+2449, 1, find vector 4 in memory position 0x0008
+2450, 1, load address 0X0292 into the PC
+2451, 200, SYSCALL: run the ISR (device driver)
+2651, 50, transfer data from device to memory
+2701, 0, check for errors
+2701, 25, CPU Burst
+2726, 1, switch to kernel mode
+2727, 20, context saved
+2747, 1, find vector 4 in memory position 0x0008
+2748, 1, load address 0X0292 into the PC
+2749, 200, ENDIO: run the ISR (device driver)
+2949, 50, check device status
+2999, 60, CPU Burst
+3059, 1, switch to kernel mode
+3060, 20, context saved
+3080, 1, find vector 14 in memory position 0x001C
+3081, 1, load address 0X0165 into the PC
+3082, 200, SYSCALL: run the ISR (device driver)
+3282, 200, transfer data from device to memory
+3482, 56, check for errors
+3538, 35, CPU Burst
+3573, 1, switch to kernel mode
+3574, 20, context saved
+3594, 1, find vector 14 in memory position 0x001C
+3595, 1, load address 0X0165 into the PC
+3596, 200, ENDIO: run the ISR (device driver)
+3796, 256, check device status
+4052, 50, CPU Burst
