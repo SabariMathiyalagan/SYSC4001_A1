@@ -1,0 +1,60 @@
+0, 30, CPU Burst
+30, 1, switch to kernel mode
+31, 20, context saved
+51, 1, find vector 10 in memory position 0x0014
+52, 1, load address 0X07B0 into the PC
+53, 40, SYSCALL: run the ISR (device driver)
+93, 40, transfer data from device to memory
+133, 484, check for errors
+617, 20, CPU Burst
+637, 1, switch to kernel mode
+638, 20, context saved
+658, 1, find vector 10 in memory position 0x0014
+659, 1, load address 0X07B0 into the PC
+660, 40, ENDIO: run the ISR (device driver)
+700, 524, check device status
+1224, 25, CPU Burst
+1249, 1, switch to kernel mode
+1250, 20, context saved
+1270, 1, find vector 11 in memory position 0x0016
+1271, 1, load address 0X01F8 into the PC
+1272, 40, SYSCALL: run the ISR (device driver)
+1312, 40, transfer data from device to memory
+1352, 443, check for errors
+1795, 25, CPU Burst
+1820, 1, switch to kernel mode
+1821, 20, context saved
+1841, 1, find vector 11 in memory position 0x0016
+1842, 1, load address 0X01F8 into the PC
+1843, 40, ENDIO: run the ISR (device driver)
+1883, 483, check device status
+2366, 30, CPU Burst
+2396, 1, switch to kernel mode
+2397, 20, context saved
+2417, 1, find vector 14 in memory position 0x001C
+2418, 1, load address 0X0165 into the PC
+2419, 40, SYSCALL: run the ISR (device driver)
+2459, 40, transfer data from device to memory
+2499, 376, check for errors
+2875, 20, CPU Burst
+2895, 1, switch to kernel mode
+2896, 20, context saved
+2916, 1, find vector 14 in memory position 0x001C
+2917, 1, load address 0X0165 into the PC
+2918, 40, ENDIO: run the ISR (device driver)
+2958, 416, check device status
+3374, 25, CPU Burst
+3399, 1, switch to kernel mode
+3400, 20, context saved
+3420, 1, find vector 19 in memory position 0x0026
+3421, 1, load address 0X0765 into the PC
+3422, 40, SYSCALL: run the ISR (device driver)
+3462, 40, transfer data from device to memory
+3502, 572, check for errors
+4074, 15, CPU Burst
+4089, 1, switch to kernel mode
+4090, 20, context saved
+4110, 1, find vector 19 in memory position 0x0026
+4111, 1, load address 0X0765 into the PC
+4112, 40, ENDIO: run the ISR (device driver)
+4152, 612, check device status
